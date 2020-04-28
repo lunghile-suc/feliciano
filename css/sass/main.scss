@@ -1,0 +1,74 @@
+$black:#000000;
+$secondaryblack:#141313;
+$lightblack:#343434;
+$gold:#C8A97F;
+$grey: #808080;
+$lightgrey:#FAFAFA;
+$white:#FFFFFF;
+
+// imports //
+// mixins
+@import 'mixins';
+
+// header
+@import 'header';
+
+// navbar
+@import 'nav-bar';
+
+// carousel
+@import 'carousel';
+
+// about
+@import 'about';
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: $white;
+    font-family: sans-serif;
+}
+
+// resets
+img{
+    width: 100%;
+    max-width: 100%;
+}
+
+p{
+    font-size: 1.2rem;
+    line-height: 30px;
+}
+
+.header{
+    font-size: 1.7rem;
+    letter-spacing: 2px;
+}
+
+.container{
+    padding: 0 15px;
+    width: 100%;
+    margin: 0 auto;
+
+    @include mediaQuery(480px){
+        max-width: 570px;
+    }
+
+    @include mediaQuery(768px){
+        max-width: 720px;
+    }
+
+    @include mediaQuery(992px){
+        max-width: 960px;
+    }
+
+    @include mediaQuery(1200px){
+        max-width: 1140px;
+    }
+}
