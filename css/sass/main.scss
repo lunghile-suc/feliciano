@@ -28,6 +28,9 @@ $white:#FFFFFF;
 // menu
 @import 'menu';
 
+// chef
+@import 'our-chef';
+
 *{
     margin: 0;
     padding: 0;
@@ -59,6 +62,8 @@ p{
 }
 
 .cursive-hd{
+    position: relative;
+    margin-bottom: -2rem;
     font-family: cursive;
     color: $gold;
 }

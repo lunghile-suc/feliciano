@@ -1,0 +1,67 @@
+.chef-section{
+    margin-top: 4rem;
+
+    .chef-header{
+        text-align: center;
+    }
+
+    .chef-items{
+        margin-top: 3rem;
+        display: grid;
+
+        @include mediaQuery(768px){
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @include mediaQuery(992px){
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+
+        .chef-item{
+            padding: 1rem;
+            .chef-img{
+                background-position: center center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                height: 400px;
+                margin-bottom: 2rem;
+            }
+
+            .img-1{
+                background-image: url(/images/chef-4.jpg);
+                border-radius: .6rem;
+            }
+
+            .img-2{
+                background-image: url(/images/chef-2.jpg);
+                border-radius: .6rem;
+            }
+
+            .img-3{
+                background-image: url(/images/chef-3.jpg);
+                border-radius: .6rem;
+            }
+
+            .img-4{
+                background-image: url(/images/chef-1.jpg);
+                border-radius: .6rem;
+            }
+
+            h4{
+                font-size: 1.3rem;
+            }
+
+            p{
+                margin: 1rem 0;
+                font-size: 1rem;
+                color: $grey;
+            }
+
+            a{
+                font-size: 1.1rem;
+                margin-right: .5rem;
+                color: $gold;
+            }
+        }
+    }
+}

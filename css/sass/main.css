@@ -674,6 +674,82 @@ ul.scrolled .book-table {
   }
 }
 
+.chef-section {
+  margin-top: 4rem;
+}
+
+.chef-section .chef-header {
+  text-align: center;
+}
+
+.chef-section .chef-items {
+  margin-top: 3rem;
+  display: -ms-grid;
+  display: grid;
+}
+
+@media screen and (min-width: 768px) {
+  .chef-section .chef-items {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .chef-section .chef-items {
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.chef-section .chef-items .chef-item {
+  padding: 1rem;
+}
+
+.chef-section .chef-items .chef-item .chef-img {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
+  margin-bottom: 2rem;
+}
+
+.chef-section .chef-items .chef-item .img-1 {
+  background-image: url(/images/chef-4.jpg);
+  border-radius: .6rem;
+}
+
+.chef-section .chef-items .chef-item .img-2 {
+  background-image: url(/images/chef-2.jpg);
+  border-radius: .6rem;
+}
+
+.chef-section .chef-items .chef-item .img-3 {
+  background-image: url(/images/chef-3.jpg);
+  border-radius: .6rem;
+}
+
+.chef-section .chef-items .chef-item .img-4 {
+  background-image: url(/images/chef-1.jpg);
+  border-radius: .6rem;
+}
+
+.chef-section .chef-items .chef-item h4 {
+  font-size: 1.3rem;
+}
+
+.chef-section .chef-items .chef-item p {
+  margin: 1rem 0;
+  font-size: 1rem;
+  color: #808080;
+}
+
+.chef-section .chef-items .chef-item a {
+  font-size: 1.1rem;
+  margin-right: .5rem;
+  color: #C8A97F;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -705,6 +781,8 @@ p {
 }
 
 .cursive-hd {
+  position: relative;
+  margin-bottom: -2rem;
   font-family: cursive;
   color: #C8A97F;
 }
