@@ -556,6 +556,124 @@ ul.scrolled .book-table {
   color: #808080;
 }
 
+.menu-section {
+  margin-top: 3rem;
+}
+
+.menu-section .menu-header {
+  text-align: center;
+}
+
+.menu-section .menu-items {
+  margin-top: 5rem;
+}
+
+@media screen and (min-width: 992px) {
+  .menu-section .menu-items {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .menu-section .menu-items .menu-item {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+.menu-section .menu-items .menu-item .menu-img {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+}
+
+.menu-section .menu-items .menu-item .img-1 {
+  background-image: url(/images/breakfast-1.jpg);
+}
+
+.menu-section .menu-items .menu-item .img-2 {
+  background-image: url(/images/breakfast-2.jpg);
+}
+
+.menu-section .menu-items .menu-item .img-3 {
+  background-image: url(/images/breakfast-3.jpg);
+}
+
+.menu-section .menu-items .menu-item .img-4 {
+  background-image: url(/images/breakfast-4.jpg);
+}
+
+.menu-section .menu-items .menu-item .img-5 {
+  background-image: url(/images/breakfast-5.jpg);
+}
+
+.menu-section .menu-items .menu-item .img-6 {
+  background-image: url(/images/breakfast-6.jpg);
+}
+
+.menu-section .menu-items .menu-item .menu-description {
+  width: 100%;
+  padding: 1rem;
+}
+
+.menu-section .menu-items .menu-item .menu-description h4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 1.2rem;
+}
+
+.menu-section .menu-items .menu-item .menu-description h4 span {
+  color: #C8A97F;
+}
+
+.menu-section .menu-items .menu-item .menu-description p {
+  font-size: 1.1rem;
+  margin: 0.7rem 0;
+  color: #808080;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-section .menu-items .menu-item .menu-description p {
+    margin: 1rem 0;
+  }
+}
+
+.menu-section .menu-items .menu-item .menu-description .order-btn a {
+  display: inline-block;
+  padding: .7rem 1rem;
+  background-color: #C8A97F;
+  color: #FFFFFF;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-section .menu-items .mb {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .menu-section .menu-items .tb-dk {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-section .menu-items .tb-dk {
+    display: -ms-grid;
+    display: grid;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;

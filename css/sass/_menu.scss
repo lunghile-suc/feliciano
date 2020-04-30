@@ -1,0 +1,100 @@
+.menu-section{
+    margin-top: 3rem;
+
+    .menu-header{
+        text-align: center;
+    }
+
+    .menu-items{
+        margin-top: 5rem;
+        @include mediaQuery(992px){
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .menu-item{
+            @include mediaQuery(640px){
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .menu-img{
+                background-position: center center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                height: 200px;
+            }
+
+            .img-1{
+                background-image: url(/images/breakfast-1.jpg);
+            }
+
+            .img-2{
+                background-image: url(/images/breakfast-2.jpg);
+            }
+
+            .img-3{
+                background-image: url(/images/breakfast-3.jpg);
+            }
+
+            .img-4{
+                background-image: url(/images/breakfast-4.jpg);
+            }
+
+            .img-5{
+                background-image: url(/images/breakfast-5.jpg);
+            }
+
+            .img-6{
+                background-image: url(/images/breakfast-6.jpg);
+            }
+
+            .menu-description{
+                width: 100%;
+                padding: 1rem;
+
+                h4{
+                    display: flex;
+                    justify-content: space-between;
+                    font-size: 1.2rem;
+
+                    span{
+                        color: $gold;
+                    }
+                }
+
+                p{
+                    font-size: 1.1rem;
+                    margin: 0.7rem 0;
+                    color: $grey;
+
+                    @include mediaQuery(768px){
+                        margin: 1rem 0;
+                    }
+                }
+
+                .order-btn a{
+                    display: inline-block;
+                    padding: .7rem 1rem;
+                    background-color: $gold;
+                    color: $white;
+                }
+            }
+        }
+
+        .mb{
+            @include mediaQuery(768px){
+                display: none;
+            }
+        }
+
+        .tb-dk{
+            @include mediaQuery(320px){
+                display: none;
+            }
+            @include mediaQuery(768px){
+                display: grid;
+            }
+        }
+    }
+}
