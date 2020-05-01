@@ -1037,6 +1037,133 @@ li.slick-active button {
   background-image: url(/images/image_3.jpg);
 }
 
+footer {
+  margin-top: 5rem;
+  padding: 7rem 0;
+  background-color: #000000;
+}
+
+@media screen and (min-width: 768px) {
+  footer .footer-items {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  footer .footer-items {
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+footer h4 {
+  margin: 3rem 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #FFFFFF;
+}
+
+footer p {
+  color: #808080;
+  font-size: 1rem;
+}
+
+footer .social-icons {
+  margin: 1rem 0;
+}
+
+footer .social-icons i {
+  font-size: 1.2rem;
+  color: #FFFFFF;
+  background-color: #343434;
+  margin-right: .5rem;
+  padding: 1rem;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+footer .item-2 p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 250px;
+}
+
+footer .item-3 a {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100px;
+  width: 100%;
+  display: block;
+}
+
+@media screen and (min-width: 600px) {
+  footer .item-3 .insta-imgs-1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+footer .item-3 .insta-imgs-1 .img-1 {
+  background-image: url(/images/insta-1.jpg);
+}
+
+footer .item-3 .insta-imgs-1 .img-2 {
+  background-image: url(/images/insta-2.jpg);
+}
+
+footer .item-3 .insta-imgs-1 .img-3 {
+  background-image: url(/images/insta-3.jpg);
+}
+
+footer .item-3 .insta-imgs-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .item-3 .insta-imgs-2 .img-4 {
+  background-image: url(/images/insta-4.jpg);
+}
+
+footer .item-3 .insta-imgs-2 .img-5 {
+  background-image: url(/images/insta-5.jpg);
+}
+
+footer .item-3 .insta-imgs-2 .img-6 {
+  background-image: url(/images/insta-6.jpg);
+}
+
+footer .item-4 input {
+  display: block;
+  width: 100%;
+  margin: 1rem 0;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  color: #FAFAFA;
+}
+
+footer .item-4 .ipt {
+  background-color: #343434;
+}
+
+footer .item-4 .btn {
+  background-color: #C8A97F;
+}
+
 * {
   margin: 0;
   padding: 0;
