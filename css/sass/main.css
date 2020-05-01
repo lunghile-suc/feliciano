@@ -676,6 +676,7 @@ ul.scrolled .book-table {
 
 .chef-section {
   margin-top: 4rem;
+  margin-bottom: 7rem;
 }
 
 .chef-section .chef-header {
@@ -960,6 +961,80 @@ ul.scrolled .book-table {
 
 li.slick-active button {
   background-color: #C8A97F;
+}
+
+.blog-section {
+  margin-top: 5rem;
+}
+
+.blog-section .blog-header {
+  text-align: center;
+}
+
+.blog-section .blog-posts {
+  margin-top: 3rem;
+}
+
+@media screen and (min-width: 768px) {
+  .blog-section .blog-posts {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 1rem;
+  }
+}
+
+.blog-section .blog-posts .blog-post {
+  margin-bottom: 1rem;
+}
+
+.blog-section .blog-posts .blog-post .post-img {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 300px;
+}
+
+.blog-section .blog-posts .blog-post .post-description {
+  padding: 2rem;
+}
+
+.blog-section .blog-posts .blog-post .post-description span {
+  color: #808080;
+}
+
+.blog-section .blog-posts .blog-post .post-description h4 {
+  margin: 1rem 0;
+}
+
+.blog-section .blog-posts .blog-post .post-description .read-more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.blog-section .blog-posts .blog-post .post-description .read-more a {
+  color: #343434;
+}
+
+.blog-section .blog-posts .blog-post .post-description .read-more p {
+  color: #808080;
+}
+
+.blog-section .blog-posts .img-1 {
+  background-image: url(/images/image_1.jpg);
+}
+
+.blog-section .blog-posts .img-2 {
+  background-image: url(/images/image_2.jpg);
+}
+
+.blog-section .blog-posts .img-3 {
+  background-image: url(/images/image_3.jpg);
 }
 
 * {
