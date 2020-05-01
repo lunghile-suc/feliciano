@@ -27,6 +27,7 @@ $(document).ready(function () {
         timepicker: false,
         mask:true,
     });
+});
 
     //testimonials carousel
     $('.testimonials-items').slick({
@@ -63,4 +64,3 @@ $(document).ready(function () {
             }
         ]
     });
-});
