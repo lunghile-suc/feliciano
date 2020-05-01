@@ -9,6 +9,43 @@ $(document).ready(function () {
         autoplaySpeed: 3000,
     });
 
+    //testimonials carousel
+    $('.testimonials-items').slick({
+        dots: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        infinite: false,
+        slidesToShow: 3,
+        slideToScroll: 3,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slideToScroll: 3,
+                    dots: true,
+                    infinite: true
+                }
+            },
+            {
+                breakpoint: 780,
+                settings: {
+                    centerMode: true,
+                    centerPadding: '60px',
+                    slidesToShow: 2,
+                    // slideToScroll: 1
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slideToScroll: 1
+                }
+            }
+        ]
+    });
+
     // nav toggle
     $('.burger').click(function(){
         $('ul').slideToggle('active');
