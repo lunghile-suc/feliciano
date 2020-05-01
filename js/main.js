@@ -33,7 +33,6 @@ $(document).ready(function () {
                     centerMode: true,
                     centerPadding: '60px',
                     slidesToShow: 2,
-                    // slideToScroll: 1
                 }
             },
             {
