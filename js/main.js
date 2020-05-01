@@ -9,6 +9,25 @@ $(document).ready(function () {
         autoplaySpeed: 3000,
     });
 
+    // nav toggle
+    $('.burger').click(function(){
+        $('ul').slideToggle('active');
+    });
+
+    // nav scrolled
+    $(window).scroll(function(){
+        $('nav').toggleClass('scrolled', $(this).scrollTop()>0);
+        $('ul').toggleClass('scrolled', $(this).scrollTop()>0);
+    });
+
+    // timepicker
+    $('#timepicker').timepicker();
+
+    $('#datepicker').datetimepicker({
+        timepicker: false,
+        mask:true,
+    });
+
     //testimonials carousel
     $('.testimonials-items').slick({
         dots: true,
@@ -43,24 +62,5 @@ $(document).ready(function () {
                 }
             }
         ]
-    });
-
-    // nav toggle
-    $('.burger').click(function(){
-        $('ul').slideToggle('active');
-    });
-
-    // nav scrolled
-    $(window).scroll(function(){
-        $('nav').toggleClass('scrolled', $(this).scrollTop()>0);
-        $('ul').toggleClass('scrolled', $(this).scrollTop()>0);
-    });
-
-    // timepicker
-    $('#timepicker').timepicker();
-
-    $('#datepicker').datetimepicker({
-        timepicker: false,
-        mask:true,
     });
 });

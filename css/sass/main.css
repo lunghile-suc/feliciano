@@ -527,6 +527,8 @@ ul.scrolled .book-table {
 
 .services-section {
   margin: 6rem 0;
+  padding: 2rem 0;
+  background-color: #FAFAFA;
   text-align: center;
 }
 
@@ -575,6 +577,10 @@ ul.scrolled .book-table {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
   }
+}
+
+.menu-section .menu-items .menu-item {
+  border: 0.5px solid #FAFAFA;
 }
 
 @media screen and (min-width: 640px) {
@@ -965,6 +971,8 @@ li.slick-active button {
 
 .blog-section {
   margin-top: 5rem;
+  padding: .5rem 0 10rem 0;
+  background-color: #FAFAFA;
 }
 
 .blog-section .blog-header {
@@ -987,6 +995,7 @@ li.slick-active button {
 
 .blog-section .blog-posts .blog-post {
   margin-bottom: 1rem;
+  background-color: #FFFFFF;
 }
 
 .blog-section .blog-posts .blog-post .post-img {
@@ -1038,7 +1047,6 @@ li.slick-active button {
 }
 
 footer {
-  margin-top: 5rem;
   padding: 7rem 0;
   background-color: #000000;
 }

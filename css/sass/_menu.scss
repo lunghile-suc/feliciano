@@ -13,6 +13,7 @@
         }
 
         .menu-item{
+            border: .5px solid $lightgrey;
             @include mediaQuery(640px){
                 display: grid;
                 grid-template-columns: 1fr 1fr;
