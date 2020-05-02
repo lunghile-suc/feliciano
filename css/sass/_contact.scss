@@ -13,6 +13,7 @@
 
     .contact-contents{
         background-color: $white;
+        margin-bottom: 3rem;
 
         @include mediaQuery(768px){
             width: 500px;

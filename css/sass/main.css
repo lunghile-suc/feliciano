@@ -302,7 +302,7 @@ ul.scrolled .book-table {
   height: 100vh;
   width: 100%;
   z-index: -100;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 @media screen and (min-width: 992px) {
@@ -560,6 +560,7 @@ ul.scrolled .book-table {
 
 .menu-section {
   margin-top: 3rem;
+  margin-bottom: 10rem;
 }
 
 .menu-section .menu-header {
@@ -659,6 +660,14 @@ ul.scrolled .book-table {
   padding: .7rem 1rem;
   background-color: #C8A97F;
   color: #FFFFFF;
+}
+
+.menu-section .menu-items .menu-item .menu-description .order-btn a:hover {
+  color: #C8A97F;
+  background-color: #FFFFFF;
+  border: 0.5px solid #C8A97F;
+  -webkit-transition: all .5s;
+  transition: all .5s;
 }
 
 @media screen and (min-width: 768px) {
@@ -773,6 +782,7 @@ ul.scrolled .book-table {
 
 .contact-section .contact-contents {
   background-color: #FFFFFF;
+  margin-bottom: 3rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -970,8 +980,7 @@ li.slick-active button {
 }
 
 .blog-section {
-  margin-top: 5rem;
-  padding: .5rem 0 10rem 0;
+  padding: 10rem 0 10rem 0;
   background-color: #FAFAFA;
 }
 
@@ -1184,6 +1193,7 @@ footer .item-4 .btn {
 body {
   background-color: #FFFFFF;
   font-family: sans-serif;
+  overflow-x: hidden;
 }
 
 img {

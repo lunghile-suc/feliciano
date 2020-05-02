@@ -1,5 +1,6 @@
 .menu-section{
     margin-top: 3rem;
+    margin-bottom: 10rem;
 
     .menu-header{
         text-align: center;
@@ -79,6 +80,13 @@
                     padding: .7rem 1rem;
                     background-color: $gold;
                     color: $white;
+
+                    &:hover{
+                        color: $gold;
+                        background-color: $white;
+                        border: .5px solid $gold;
+                        transition: all .5s;
+                    }
                 }
             }
         }

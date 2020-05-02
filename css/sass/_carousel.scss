@@ -2,7 +2,7 @@
     height: 100vh;
     width: 100%;
     z-index: -100;
-    overflow-x: hidden;
+    overflow: hidden;
 
     @include mediaQuery(992px){
         position: absolute;
