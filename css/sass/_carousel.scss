@@ -27,16 +27,24 @@
 
         span{
             color: $gold;
-            font-size: clamp(2.4rem, 4vw, 5rem);
+            font-size: clamp(2.4rem, 5vw, 6rem);
             z-index: 1;
+
+            @include mediaQuery(600px){
+                font-size: 3.5rem;
+            }
         }
 
         h1{
             color: $white;
-            font-size: clamp(2.8rem, 4vw, 6rem);
+            font-size: clamp(2.8rem, 5vw, 6rem);
             letter-spacing: 2px;
             z-index: 1;
             text-align: center;
+
+            @include mediaQuery(600px){
+                font-size: 3.5rem;
+            }
         }
     }
 
