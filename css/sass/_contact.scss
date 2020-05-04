@@ -90,3 +90,67 @@
         }
     }
 }
+
+.contact-page{
+    margin: 10rem 0;
+
+    .container{
+
+        @include mediaQuery(768px){
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    .input-items{
+        input, textarea{
+            display: block;
+            outline: none;
+            width: 100%;
+            padding: 1rem;
+            margin: 1rem 0;
+            font-size: 1rem;
+            border: .5px solid $grey;
+        }
+    }
+
+    .input-btn{
+        margin: 1rem 0;
+
+
+        a{
+            display: block;
+            color: $white;
+            padding: 1rem;
+            background-color: $gold;
+            text-align: center;
+
+            &:hover{
+                color: $gold;
+                background-color: $white;
+                border: .5px solid $gold;
+                transition: all .5s;
+            }
+
+            @include mediaQuery(768px){
+                display: inline-block;
+            }
+        }
+    }
+
+    .contact-ads{
+        margin-top: 3rem;
+
+        p{
+            padding: 1rem 0;
+
+            span{
+                color: $gold;
+            }
+        }
+    }
+}
+
+.rmv-bg{
+    background-image: initial;
+}

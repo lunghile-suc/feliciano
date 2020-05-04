@@ -27,6 +27,7 @@
                 height: 200px;
             }
 
+            // breakfast imgs
             .img-1{
                 background-image: url(/images/breakfast-1.jpg);
             }
@@ -50,6 +51,159 @@
             .img-6{
                 background-image: url(/images/breakfast-6.jpg);
             }
+
+            .img-7{
+                background-image: url(/images/breakfast-7.jpg);
+            }
+
+            .img-8{
+                background-image: url(/images/breakfast-8.jpg);
+            }
+
+            // lunch-imgs
+
+            .img-ln-1{
+                background-image: url(/images/lunch-1.jpg);
+            }
+
+            .img-ln-2{
+                background-image: url(/images/lunch-2.jpg);
+            }
+
+            .img-ln-3{
+                background-image: url(/images/lunch-3.jpg);
+            }
+
+            .img-ln-4{
+                background-image: url(/images/lunch-4.jpg);
+            }
+
+            .img-ln-5{
+                background-image: url(/images/lunch-5.jpg);
+            }
+
+            .img-ln-6{
+                background-image: url(/images/lunch-6.jpg);
+            }
+
+            .img-ln-7{
+                background-image: url(/images/lunch-7.jpg);
+            }
+
+            .img-ln-8{
+                background-image: url(/images/lunch-8.jpg);
+            }
+
+            // dinner-imgs
+
+            .img-dn-1{
+                background-image: url(/images/dinner-1.jpg);
+            }
+
+            .img-dn-2{
+                background-image: url(/images/dinner-2.jpg);
+            }
+
+            .img-dn-3{
+                background-image: url(/images/dinner-3.jpg);
+            }
+
+            .img-dn-4{
+                background-image: url(/images/dinner-4.jpg);
+            }
+
+            .img-dn-5{
+                background-image: url(/images/dinner-5.jpg);
+            }
+
+            .img-dn-6{
+                background-image: url(/images/dinner-6.jpg);
+            }
+
+            // drinks imgs
+
+            .img-dk-1{
+                background-image: url(/images/drink-1.jpg);
+            }
+
+            .img-dk-2{
+                background-image: url(/images/drink-2.jpg);
+            }
+
+            .img-dk-3{
+                background-image: url(/images/drink-3.jpg);
+            }
+
+            .img-dk-4{
+                background-image: url(/images/drink-4.jpg);
+            }
+
+            .img-dk-5{
+                background-image: url(/images/drink-5.jpg);
+            }
+
+            .img-dk-6{
+                background-image: url(/images/drink-6.jpg);
+            }
+
+            // desserts imgs
+            .img-ds-1{
+                background-image: url(/images/dessert-1.jpg);
+            }
+
+            .img-ds-2{
+                background-image: url(/images/dessert-2.jpg);
+            }
+
+            .img-ds-3{
+                background-image: url(/images/dessert-3.jpg);
+            }
+
+            .img-ds-4{
+                background-image: url(/images/dessert-4.jpg);
+            }
+
+            .img-ds-5{
+                background-image: url(/images/dessert-5.jpg);
+            }
+
+            .img-ds-6{
+                background-image: url(/images/drink-6.jpg);
+            }
+
+            // wine imgs
+            .img-wn-1{
+                background-image: url(/images/wine-1.jpg);
+            }
+
+            .img-wn-2{
+                background-image: url(/images/wine-2.jpg);
+            }
+
+            .img-wn-3{
+                background-image: url(/images/wine-3.jpg);
+            }
+
+            .img-wn-4{
+                background-image: url(/images/wine-4.jpg);
+            }
+
+            .img-wn-5{
+                background-image: url(/images/wine-5.jpg);
+            }
+
+            .img-wn-6{
+                background-image: url(/images/wine-6.jpg);
+            }
+
+            .img-wn-7{
+                background-image: url(/images/wine-7.jpg);
+            }
+
+            .img-wn-8{
+                background-image: url(/images/wine-8.jpg);
+            }
+
 
             .menu-description{
                 width: 100%;
@@ -105,5 +259,74 @@
                 display: grid;
             }
         }
+    }
+}
+
+.tab-list{
+    margin: 3rem 0;
+
+    .tabs{
+
+        @include mediaQuery(768px){
+            display: flex;
+            justify-content: space-between;
+        }
+        li{
+            display: block;
+            background-color: $white;
+            cursor: pointer;
+            padding: 1.5rem 0;
+            text-align: center;
+            font-weight: 600;
+            font-size: 1.4rem;
+
+            @include mediaQuery(768px){
+                padding: 1rem;
+                position: relative;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+
+                span{
+                    position: absolute;
+                    visibility: hidden;
+                    z-index: -1;
+                    bottom: -.3rem;
+                    transform: rotate(45deg);
+                    margin: 0 auto;
+                    width: 30px;
+                    height: 30px;
+                    background-color: $gold;
+                }
+            }
+
+            &:hover{
+                background-color: $gold;
+                color: $white;
+            }
+        }
+    }
+}
+
+.panel{
+    display: none;
+}
+
+.panel.p-active{
+    display: block;
+}
+
+.tab-list .tabs .tab.p-active{
+    background-color: $gold;
+    color: $white;
+}
+
+.tab-list .tabs .tab.p-active span{
+    visibility: visible;
+}
+
+.panel{
+    .menu-items{
+        margin-top: 1rem;
     }
 }

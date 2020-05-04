@@ -64,3 +64,40 @@ $('.testimonials-items').slick({
         }
     ]
 });
+
+// tabs
+ const tabs = document.querySelector('.tabs');
+ const panels = document.querySelectorAll('.panel');
+ const tab = document.querySelector('.tab');
+
+ tabs.addEventListener('click', function(e){
+     if(e.target.tagName == "LI"){
+         const targetPanel = document.querySelector(e.target.dataset.target);
+         panels.forEach(function(panel){
+             if(panel == targetPanel){
+                 panel.classList.add('p-active');
+             }else{
+                 panel.classList.remove('p-active');
+             }
+         })
+     }
+ });
+
+function toggleItem(elem){
+    for(var i = 0; i < elem.length; i++){
+        elem[i].addEventListener('click', function(e){
+            var current = this;
+            for (var i = 0; i < elem.length; i++){
+                if(current != elem[i]){
+                    elem[i].classList.remove('p-active');
+                }else if (current.classList.contains('p-active') === true){
+                    current.classList.remove('p-active');
+                }else{
+                    current.classList.add('p-active');
+                }
+            }
+            e.preventDefault();
+        });
+    };
+}
+toggleItem(document.querySelectorAll('.tab'))

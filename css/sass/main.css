@@ -654,6 +654,150 @@ a.active {
   background-image: url(/images/breakfast-6.jpg);
 }
 
+.menu-section .menu-items .menu-item .img-7 {
+  background-image: url(/images/breakfast-7.jpg);
+}
+
+.menu-section .menu-items .menu-item .img-8 {
+  background-image: url(/images/breakfast-8.jpg);
+}
+
+.menu-section .menu-items .menu-item .img-ln-1 {
+  background-image: url(/images/lunch-1.jpg);
+}
+
+.menu-section .menu-items .menu-item .img-ln-2 {
+  background-image: url(/images/lunch-2.jpg);
+}
+
+.menu-section .menu-items .menu-item .img-ln-3 {
+  background-image: url(/images/lunch-3.jpg);
+}
+
+.menu-section .menu-items .menu-item .img-ln-4 {
+  background-image: url(/images/lunch-4.jpg);
+}
+
+.menu-section .menu-items .menu-item .img-ln-5 {
+  background-image: url(/images/lunch-5.jpg);
+}
+
+.menu-section .menu-items .menu-item .img-ln-6 {
+  background-image: url(/images/lunch-6.jpg);
+}
+
+.menu-section .menu-items .menu-item .img-ln-7 {
+  background-image: url(/images/lunch-7.jpg);
+}
+
+.menu-section .menu-items .menu-item .img-ln-8 {
+  background-image: url(/images/lunch-8.jpg);
+}
+
+.menu-section .menu-items .menu-item .img-dn-1 {
+  background-image: url(/images/dinner-1.jpg);
+}
+
+.menu-section .menu-items .menu-item .img-dn-2 {
+  background-image: url(/images/dinner-2.jpg);
+}
+
+.menu-section .menu-items .menu-item .img-dn-3 {
+  background-image: url(/images/dinner-3.jpg);
+}
+
+.menu-section .menu-items .menu-item .img-dn-4 {
+  background-image: url(/images/dinner-4.jpg);
+}
+
+.menu-section .menu-items .menu-item .img-dn-5 {
+  background-image: url(/images/dinner-5.jpg);
+}
+
+.menu-section .menu-items .menu-item .img-dn-6 {
+  background-image: url(/images/dinner-6.jpg);
+}
+
+.menu-section .menu-items .menu-item .img-dk-1 {
+  background-image: url(/images/drink-1.jpg);
+}
+
+.menu-section .menu-items .menu-item .img-dk-2 {
+  background-image: url(/images/drink-2.jpg);
+}
+
+.menu-section .menu-items .menu-item .img-dk-3 {
+  background-image: url(/images/drink-3.jpg);
+}
+
+.menu-section .menu-items .menu-item .img-dk-4 {
+  background-image: url(/images/drink-4.jpg);
+}
+
+.menu-section .menu-items .menu-item .img-dk-5 {
+  background-image: url(/images/drink-5.jpg);
+}
+
+.menu-section .menu-items .menu-item .img-dk-6 {
+  background-image: url(/images/drink-6.jpg);
+}
+
+.menu-section .menu-items .menu-item .img-ds-1 {
+  background-image: url(/images/dessert-1.jpg);
+}
+
+.menu-section .menu-items .menu-item .img-ds-2 {
+  background-image: url(/images/dessert-2.jpg);
+}
+
+.menu-section .menu-items .menu-item .img-ds-3 {
+  background-image: url(/images/dessert-3.jpg);
+}
+
+.menu-section .menu-items .menu-item .img-ds-4 {
+  background-image: url(/images/dessert-4.jpg);
+}
+
+.menu-section .menu-items .menu-item .img-ds-5 {
+  background-image: url(/images/dessert-5.jpg);
+}
+
+.menu-section .menu-items .menu-item .img-ds-6 {
+  background-image: url(/images/drink-6.jpg);
+}
+
+.menu-section .menu-items .menu-item .img-wn-1 {
+  background-image: url(/images/wine-1.jpg);
+}
+
+.menu-section .menu-items .menu-item .img-wn-2 {
+  background-image: url(/images/wine-2.jpg);
+}
+
+.menu-section .menu-items .menu-item .img-wn-3 {
+  background-image: url(/images/wine-3.jpg);
+}
+
+.menu-section .menu-items .menu-item .img-wn-4 {
+  background-image: url(/images/wine-4.jpg);
+}
+
+.menu-section .menu-items .menu-item .img-wn-5 {
+  background-image: url(/images/wine-5.jpg);
+}
+
+.menu-section .menu-items .menu-item .img-wn-6 {
+  background-image: url(/images/wine-6.jpg);
+}
+
+.menu-section .menu-items .menu-item .img-wn-7 {
+  background-image: url(/images/wine-7.jpg);
+}
+
+.menu-section .menu-items .menu-item .img-wn-8 {
+  background-image: url(/images/wine-8.jpg);
+}
+
 .menu-section .menu-items .menu-item .menu-description {
   width: 100%;
   padding: 1rem;
@@ -717,6 +861,83 @@ a.active {
     display: -ms-grid;
     display: grid;
   }
+}
+
+.tab-list {
+  margin: 3rem 0;
+}
+
+@media screen and (min-width: 768px) {
+  .tab-list .tabs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.tab-list .tabs li {
+  display: block;
+  background-color: #FFFFFF;
+  cursor: pointer;
+  padding: 1.5rem 0;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+@media screen and (min-width: 768px) {
+  .tab-list .tabs li {
+    padding: 1rem;
+    position: relative;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .tab-list .tabs li span {
+    position: absolute;
+    visibility: hidden;
+    z-index: -1;
+    bottom: -.3rem;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    margin: 0 auto;
+    width: 30px;
+    height: 30px;
+    background-color: #C8A97F;
+  }
+}
+
+.tab-list .tabs li:hover {
+  background-color: #C8A97F;
+  color: #FFFFFF;
+}
+
+.panel {
+  display: none;
+}
+
+.panel.p-active {
+  display: block;
+}
+
+.tab-list .tabs .tab.p-active {
+  background-color: #C8A97F;
+  color: #FFFFFF;
+}
+
+.tab-list .tabs .tab.p-active span {
+  visibility: visible;
+}
+
+.panel .menu-items {
+  margin-top: 1rem;
 }
 
 .chef-section {
@@ -900,6 +1121,71 @@ a.active {
   .contact-section .contact-contents .contact-inputs .input-btn a {
     display: inline-block;
   }
+}
+
+.contact-page {
+  margin: 10rem 0;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-page .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+.contact-page .input-items input, .contact-page .input-items textarea {
+  display: block;
+  outline: none;
+  width: 100%;
+  padding: 1rem;
+  margin: 1rem 0;
+  font-size: 1rem;
+  border: 0.5px solid #808080;
+}
+
+.contact-page .input-btn {
+  margin: 1rem 0;
+}
+
+.contact-page .input-btn a {
+  display: block;
+  color: #FFFFFF;
+  padding: 1rem;
+  background-color: #C8A97F;
+  text-align: center;
+}
+
+.contact-page .input-btn a:hover {
+  color: #C8A97F;
+  background-color: #FFFFFF;
+  border: 0.5px solid #C8A97F;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-page .input-btn a {
+    display: inline-block;
+  }
+}
+
+.contact-page .contact-ads {
+  margin-top: 3rem;
+}
+
+.contact-page .contact-ads p {
+  padding: 1rem 0;
+}
+
+.contact-page .contact-ads p span {
+  color: #C8A97F;
+}
+
+.rmv-bg {
+  background-image: initial;
 }
 
 .testimonials-section {
